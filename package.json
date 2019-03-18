@@ -1,0 +1,20 @@
+{
+  "name": "erica-external-website",
+  "version": "1.0.0",
+  "description": "External site to host .apk and post feedback",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raymond Findlay",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.19",
+    "passport": "^0.4.0",
+    "validator": "^10.11.0"
+  }
+}
