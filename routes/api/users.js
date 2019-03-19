@@ -11,7 +11,6 @@ const validateLoginInput = require('./../../validation/login')
 // Model
 const User = require('../../models/User')
 
-
 //@route   POST api/users/register
 //@desc    Register a user
 //@access  Public              
@@ -95,3 +94,4 @@ router.post('/login', (req, res) => {
     })
 })
 
+module.exports = router

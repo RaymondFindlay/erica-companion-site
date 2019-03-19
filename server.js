@@ -3,6 +3,8 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const passport = require('passport')
 
+const users = require('./routes/api/users')
+
 const app = express()
 
 //Body parser MW
@@ -21,6 +23,9 @@ mongoose
     .catch(err => console.log(err))
 
 //Routes
-app.use(/*user*/)
-app.use(/*profile*/)
-app.use(/*post*/)
+app.use('/api/users', users)
+//app.use(/*profile*/)
+//app.use(/*post*/)
+
+const port = process.env.port || 5000
+app.listen(port, () => console.log(`Server running on port ${port}`))
