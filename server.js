@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 const passport = require('passport')
 
 const users = require('./routes/api/users')
+const downloads = require('./routes/api/download')
 
 const app = express()
 
@@ -24,7 +25,7 @@ mongoose
 
 //Routes
 app.use('/api/users', users)
-//app.use(/*profile*/)
+app.use('/api/download', downloads)
 //app.use(/*post*/)
 
 const port = process.env.port || 5000
